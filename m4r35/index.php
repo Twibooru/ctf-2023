@@ -1,11 +1,4 @@
 <?php
-    function scratchpad_append(string $text) {
-        $content = file_get_contents("scratchpad.txt");
-
-        $content .= "\n" . $text;
-
-        file_put_contents("scratchpad.txt", $content);
-    }
     session_start();
 
     if (!isset($_SESSION['logged_in'])) {
